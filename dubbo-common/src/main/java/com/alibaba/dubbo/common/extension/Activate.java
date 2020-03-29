@@ -31,6 +31,10 @@ import java.lang.annotation.Target;
 @Deprecated
 public @interface Activate {
 
+    /**
+     * 插件激活
+     *
+     * */
     String[] group() default {};
 
     String[] value() default {};
