@@ -55,6 +55,12 @@ public @interface Adaptive {
      *
      * @return parameter names in URL
      */
+
+    /**
+     * 就是默认将String[]数组中的第一个参数作为默认的extension，若不存在就选择下一个，若最后一个没有就会
+     * 选择默认
+     *
+     * */
     String[] value() default {};
 
 }

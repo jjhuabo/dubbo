@@ -52,6 +52,11 @@ import java.util.Set;
 /**
  * JdkCompiler. (SPI, Singleton, ThreadSafe)
  */
+
+
+/**
+ * dubbo的Complier其实还是依托JDK提供的编译器，只不过自己做了适量的改变
+ * */
 public class JdkCompiler extends AbstractCompiler {
 
     private final JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();

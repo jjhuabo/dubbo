@@ -20,6 +20,11 @@ import java.util.LinkedHashMap;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+
+/**
+ * 基于LinkedHashMap做的缓存封装
+ *
+ * */
 public class LRUCache<K, V> extends LinkedHashMap<K, V> {
 
     private static final long serialVersionUID = -5167631809472116969L;

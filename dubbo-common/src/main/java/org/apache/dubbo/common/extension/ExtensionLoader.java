@@ -132,6 +132,7 @@ public class ExtensionLoader<T> {
     }
 
     // For testing purposes only
+    // 将已经加载的类，根据指定的类加载进行删除。
     public static void resetExtensionLoader(Class type) {
         ExtensionLoader loader = EXTENSION_LOADERS.get(type);
         if (loader != null) {
