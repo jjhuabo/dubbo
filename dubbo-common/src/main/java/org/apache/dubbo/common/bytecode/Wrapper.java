@@ -36,6 +36,13 @@ import java.util.regex.Matcher;
  * Wrapper.
  */
 public abstract class Wrapper {
+
+    /**
+     * 这个类是对类进行封装
+     *
+     * */
+
+
     private static final Map<Class<?>, Wrapper> WRAPPER_MAP = new ConcurrentHashMap<Class<?>, Wrapper>(); //class wrapper map
     private static final String[] EMPTY_STRING_ARRAY = new String[0];
     private static final String[] OBJECT_METHODS = new String[]{"getClass", "hashCode", "toString", "equals"};
@@ -121,6 +128,9 @@ public abstract class Wrapper {
         return ret;
     }
 
+    /**
+     * 似乎是对类进行拼接
+     * */
     private static Wrapper makeWrapper(Class<?> c) {
         if (c.isPrimitive()) {
             throw new IllegalArgumentException("Can not create wrapper for primitive type: " + c);

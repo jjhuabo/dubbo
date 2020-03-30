@@ -99,6 +99,9 @@ public class JdkCompiler extends AbstractCompiler {
         javaFileManager = new JavaFileManagerImpl(manager, classLoader);
     }
 
+    /**
+    * 编译好之后，通过类加载器进行加载
+    * */
     @Override
     public Class<?> doCompile(String name, String sourceCode) throws Throwable {
         int i = name.lastIndexOf('.');
